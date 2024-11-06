@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA-St. Josephs IJK</title>
+    <!-- Customized Favicon -->
+    <link rel="icon" href="image/Favicon/favicon.ico" type="image/png">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="Image/PRELOADER.gif" alt="Loading...">
+    </div>
+
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Image/logo.svg" alt="Logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="menu-close" id="mobile-close">
+                <span>&times;</span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faculties.html">Faculties</a></li>
+                <li class="dropdown">
+                    <a href="#">Activities</a>
+                    <ul class="dropdown-content">
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="placement.html">Placement</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="https://stjosephs.linways.com/">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slideshow Section (Dynamic) -->
+    <section class="slideshow-container">
+        <div id="slideshowContainer"></div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </section>
+
+    <!-- Announcement Section (Dynamic) -->
+    <section class="announcement">
+        <div class="announcement-label">Announcement:</div>
+        <marquee class="announcement-text" id="announcementMarquee" behavior="scroll" direction="left" scrollamount="5"></marquee>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" style="background-image: url('Image/about-bg.jpg'); background-size: cover; background-position: center;">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="Image/front_ad.webp" alt="About Us">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p style="color: #201f1f;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, Highlights Section (Static Content) -->
+    <section class="mission-vision-highlights">
+        <div class="mv-content">
+            <div class="mv-item">
+                <div class="mv-icon">
+                    <img src="Image/MISSION.gif" alt="Mission Icon">
+                </div>
+                <h3>Mission</h3>
+                <p>Our mission is to provide high-quality education and training to prepare students for their professional careers.</p>
+            </div>
+            <div class="mv-item">
+                <div class="mv-icon">
+                    <img src="Image/VISION.gif" alt="Vision Icon">
+                </div>
+                <h3>Vision</h3>
+                <p>Our vision is to be recognized as a leader in education and innovation, empowering students to excel in their chosen fields.</p>
+            </div>
+            <div class="mv-item">
+                <div class="mv-icon">
+                    <img src="Image/HIGHLIGHT.gif" alt="Highlights Icon">
+                </div>
+                <h3>Highlights</h3>
+                <p>We offer state-of-the-art facilities, experienced faculty, and a commitment to excellence in all our programs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOD Message Section (Static Content) -->
+    <section class="hod-message" style="background-image: url('Image/bg.svg');">
+        <div class="hod-content">
+            <div class="hod-message-text">
+                <h2>Message from the HOD</h2>
+                <p>Welcome to our department. We strive to provide a nurturing environment for students to learn and grow. Our faculty is dedicated to offering the best education and support to prepare students for their future careers.</p>
+            </div>
+            <div class="hod-info">
+                <img src="Image/principal.webp" alt="HOD Photo">
+                <h3>Sr.Siji</h3>
+                <p>Head of Department</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Events Section (Dynamic) -->
+    <section class="blog-posts">
+        <div class="blog-header">
+            <h2>Latest Events and Updates</h2>
+        </div>
+        <div class="blog-content" id="latestEventsContainer"></div>
+    </section>
+
+    <!-- Testimonials Section (Static Content) -->
+    <section class="testimonials" style="background-image: url('Image/testimonial.svg');">
+        <div class="testimonial-container">
+            <div class="testimonial active">
+                <img src="Image/principal.webp" alt="Testimonial 1">
+                <h3>Jane Doe</h3>
+                <p>CEO, Company ABC</p>
+                <blockquote>"This company provided excellent service and exceeded my expectations in every way."</blockquote>
+            </div>
+            <div class="testimonial">
+                <img src="Image/principal.webp" alt="Testimonial 2">
+                <h3>John Smith</h3>
+                <p>CTO, Company XYZ</p>
+                <blockquote>"The team was professional, efficient, and delivered great results on time."</blockquote>
+            </div>
+            <div class="testimonial">
+                <img src="Image/principal.webp" alt="Testimonial 3">
+                <h3>Mary Johnson</h3>
+                <p>Manager, Company DEF</p>
+                <blockquote>"I highly recommend their services to anyone looking for quality and reliability."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="mailto:xyz@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><i class="fas fa-map-marker-alt"></i> St. Josephs College (Autonomous), Irinjalakuda, Thrissur, Kerala, India – 680 121</p>
+            <p><i class="fas fa-phone-alt"></i> Call Us: +91 8301000125, +91 7994042456</p>
+            <p><i class="fas fa-envelope"></i> Email: principal@stjosephs.edu.in, info@stjosephs.edu.in</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="Image/logo.svg" alt="Footer Logo"></a>
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 St. Joseph's College (Autonomous), Irinjalakuda. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Login Section -->
+    <div id="login-section">
+        <h2>Admin Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="dashboard" style="display: none;">
+        <h2>Welcome, Admin</h2>
+        <button onclick="logout()">Logout</button>
+        
+        <!-- Slideshow Image Management -->
+        <div class="dashboard-section">
+            <h3>Manage Slideshow Images (Max 4)</h3>
+            <input type="file" id="uploadImage">
+            <button onclick="uploadImage()">Upload Image</button>
+            <div id="imageGallery" class="image-gallery"></div>
+        </div>
+
+        <!-- Announcements Section -->
+        <div class="dashboard-section">
+            <h3>Manage Announcements</h3>
+            <textarea id="announcement1" placeholder="Announcement 1"></textarea>
+            <textarea id="announcement2" placeholder="Announcement 2"></textarea>
+            <textarea id="announcement3" placeholder="Announcement 3"></textarea>
+            <button id="saveAnnouncements" onclick="saveAnnouncements()">Save Announcements</button>
+        </div>
+
+        <!-- Latest Events Section -->
+        <div class="dashboard-section">
+            <h3>Latest Events and Updates</h3>
+            <textarea id="latestEvents" placeholder="Latest events and updates"></textarea>
+            <button id="saveEvents" onclick="saveEvents()">Save Events</button>
+        </div>
+    </div>
+    
+    <script src="admin.js"></script>
+</body>
+</html>
